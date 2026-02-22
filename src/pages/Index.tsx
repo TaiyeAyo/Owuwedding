@@ -52,7 +52,7 @@ const Index = () => {
       <section className="py-24 px-4 bg-card">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-4">
-            Isabel &middot; Taiye
+            Isabel <Heart className="inline w-4 h-4 text-foreground" fill="currentColor" /> Taiye
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
             We're Getting Married
