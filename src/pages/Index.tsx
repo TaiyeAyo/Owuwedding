@@ -72,7 +72,7 @@ const Index = () => {
           {/* QR Code for RSVP */}
           <div className="text-center">
             <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-4">
-              Kindly Respond
+              Please Let Us Know You Are Attending
             </p>
             <h3 className="font-display text-3xl text-foreground mb-6">RSVP</h3>
             <div className="gold-divider w-24 mx-auto mb-8" />
