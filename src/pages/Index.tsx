@@ -37,6 +37,9 @@ const Index = () => {
           <p className="animate-fade-in-up-delay-2 font-body text-xl md:text-2xl text-muted-foreground tracking-wide">
             Request the pleasure of your company
           </p>
+          <p className="animate-fade-in-up-delay-3 font-display text-2xl md:text-3xl text-primary mt-6">
+            August 8, 2026
+          </p>
 
           {/* Scroll hint */}
           <div className="animate-fade-in-up-delay-3 mt-16">
