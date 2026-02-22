@@ -25,9 +25,9 @@ const Index = () => {
 
           {/* Names */}
           <h1 className="animate-fade-in-up-delay-1 font-display text-foreground leading-tight">
-           <span className="block text-4xl md:text-5xl lg:text-6xl">Taiye</span>
+           <span className="block text-4xl md:text-5xl lg:text-6xl">Isabel</span>
             <span className="block text-xl md:text-2xl italic font-light text-primary my-3">&amp;</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl">Isabel</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl">Taiye</span>
           </h1>
 
           {/* Divider */}
@@ -52,7 +52,7 @@ const Index = () => {
       <section className="py-24 px-4 bg-card">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-4">
-            Taiye &middot; Isabel
+            Isabel &middot; Taiye
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
             We're Getting Married
@@ -129,7 +129,7 @@ const Index = () => {
       <footer className="py-12 px-4 bg-card text-center">
         <div className="gold-divider w-48 mx-auto mb-8" />
         <p className="font-display text-2xl text-foreground mb-2">
-          Taiye &amp; Isabel
+          Isabel &amp; Taiye
         </p>
         <p className="font-body text-muted-foreground tracking-wider text-sm">
           With love, forever and always
