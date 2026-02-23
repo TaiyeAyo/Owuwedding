@@ -19,7 +19,7 @@ const Index = () => {
       >
         <div className="text-center max-w-3xl mx-auto py-16 px-8 md:px-16">
           {/* Pre-heading */}
-          <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-12">
+          <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-16">
             Together with their families
           </p>
 
@@ -51,7 +51,7 @@ const Index = () => {
           </div>
 
           {/* Scroll hint */}
-          <div className="animate-fade-in-up-delay-3 mt-20">
+          <div className="animate-fade-in-up-delay-3 mt-28">
             <Heart className="w-5 h-5 text-primary mx-auto animate-bounce" />
           </div>
         </div>
