@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { QRCodeSVG } from "qrcode.react";
-import { Heart, ExternalLink } from "lucide-react";
+import { Heart, ExternalLink, Plane } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -37,8 +37,11 @@ const Index = () => {
           <p className="animate-fade-in-up-delay-2 font-body text-xl md:text-2xl text-muted-foreground tracking-wide">
             Request the pleasure of your company
           </p>
-          <p className="animate-fade-in-up-delay-3 font-display text-2xl md:text-3xl text-primary mt-6">
+          <p className="animate-fade-in-up-delay-3 font-display text-lg md:text-xl text-primary mt-6">
             August 8, 2026
+          </p>
+          <p className="animate-fade-in-up-delay-3 font-body text-base text-muted-foreground mt-2 tracking-wider">
+            at 11 o'clock
           </p>
 
           {/* Scroll hint */}
@@ -125,7 +128,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Travel Section */}
+      <section className="py-24 px-4 bg-background">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-4">
+            Getting There
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">Travel</h2>
+          <div className="gold-divider w-32 mx-auto mb-10" />
+          <p className="font-body text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed mb-8">
+            Let us know when you're arriving so we can help coordinate. Plus, check out our upcoming hotel discounts for guests.
+          </p>
+          <Link
+            to="/travel"
+            className="inline-flex items-center gap-2 bg-gold-gradient text-primary-foreground px-8 py-3 rounded font-body text-lg tracking-wider hover:opacity-90 transition-opacity"
+          >
+            <Plane className="w-5 h-5" />
+            Travel Details
+          </Link>
+        </div>
+      </section>
+
       <footer className="py-12 px-4 bg-card text-center">
         <div className="gold-divider w-48 mx-auto mb-8" />
         <p className="font-display text-2xl text-foreground mb-2">
