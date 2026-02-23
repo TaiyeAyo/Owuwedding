@@ -17,38 +17,42 @@ const Index = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto bg-background/80 backdrop-blur-sm rounded-2xl py-16 px-8 md:px-16">
           {/* Pre-heading */}
-          <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-8">
+          <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-12">
             Together with their families
           </p>
 
           {/* Names */}
           <h1 className="animate-fade-in-up-delay-1 font-display text-foreground leading-tight">
            <span className="block text-4xl md:text-5xl lg:text-6xl">Isabel</span>
-            <span className="block text-xl md:text-2xl italic font-light text-primary my-3">&amp;</span>
+            <span className="block text-xl md:text-2xl italic font-light text-primary my-4">&amp;</span>
             <span className="block text-4xl md:text-5xl lg:text-6xl">Taiye</span>
           </h1>
 
           {/* Divider */}
-          <div className="gold-divider w-48 mx-auto my-8 animate-fade-in-up-delay-2" />
+          <div className="gold-divider w-48 mx-auto my-10 animate-fade-in-up-delay-2" />
 
           {/* Subtitle */}
           <p className="animate-fade-in-up-delay-2 font-body text-xl md:text-2xl text-muted-foreground tracking-wide">
             Request the pleasure of your company
           </p>
-          <p className="animate-fade-in-up-delay-3 font-display text-lg md:text-xl text-primary mt-6">
-            August 8, 2026
-          </p>
-          <p className="animate-fade-in-up-delay-3 font-body text-base text-muted-foreground mt-2 tracking-wider">
-            at 11 o'clock
-          </p>
-          <p className="animate-fade-in-up-delay-3 font-body text-sm text-muted-foreground mt-4 tracking-wide">
+
+          <div className="mt-10 space-y-2 animate-fade-in-up-delay-3">
+            <p className="font-display text-lg md:text-xl text-primary">
+              August 8, 2026
+            </p>
+            <p className="font-body text-base text-muted-foreground tracking-wider">
+              at 11 o'clock
+            </p>
+          </div>
+
+          <p className="animate-fade-in-up-delay-3 font-body text-sm text-muted-foreground mt-6 tracking-wide">
             Engrafted Word Church, 5 W Broad St, Cookeville, TN
           </p>
 
           {/* Scroll hint */}
-          <div className="animate-fade-in-up-delay-3 mt-16">
+          <div className="animate-fade-in-up-delay-3 mt-14">
             <Heart className="w-5 h-5 text-primary mx-auto animate-bounce" />
           </div>
         </div>
