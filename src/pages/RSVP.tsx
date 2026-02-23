@@ -64,11 +64,24 @@ const RSVP = () => {
           <p className="text-lg text-muted-foreground font-body mb-2">
             We're so excited to celebrate with you.
           </p>
-          <p className="text-muted-foreground font-body mb-8">
+          <p className="text-muted-foreground font-body mb-6">
             {name}
             {companions.filter((c) => c.trim()).length > 0 &&
               ` + ${companions.filter((c) => c.trim()).length} guest${companions.filter((c) => c.trim()).length > 1 ? "s" : ""}`}
           </p>
+
+          <div className="bg-card rounded-lg p-6 border border-border shadow-sm mb-8 text-left max-w-sm mx-auto">
+            <p className="text-primary tracking-[0.2em] uppercase text-xs font-body mb-2">Ceremony</p>
+            <p className="font-body text-foreground text-sm">Engrafted Word Church</p>
+            <p className="font-body text-muted-foreground text-sm">5 W Broad St, Cookeville, TN</p>
+
+            <div className="gold-divider w-16 my-4" />
+
+            <p className="text-primary tracking-[0.2em] uppercase text-xs font-body mb-2">Reception</p>
+            <p className="font-body text-foreground text-sm">TNTech RUC Hall</p>
+            <p className="font-body text-muted-foreground text-sm">1000 N. Dixie Ave, Cookeville, TN 38505</p>
+          </div>
+
           <button
             onClick={() => navigate("/")}
             className="text-primary underline underline-offset-4 hover:text-gold-dark transition-colors font-body text-lg"

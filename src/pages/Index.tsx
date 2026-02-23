@@ -43,6 +43,9 @@ const Index = () => {
           <p className="animate-fade-in-up-delay-3 font-body text-base text-muted-foreground mt-2 tracking-wider">
             at 11 o'clock
           </p>
+          <p className="animate-fade-in-up-delay-3 font-body text-sm text-muted-foreground mt-4 tracking-wide">
+            Engrafted Word Church, 5 W Broad St, Cookeville, TN
+          </p>
 
           {/* Scroll hint */}
           <div className="animate-fade-in-up-delay-3 mt-16">
