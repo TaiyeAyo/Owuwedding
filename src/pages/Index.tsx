@@ -17,7 +17,7 @@ const Index = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-center max-w-3xl mx-auto bg-background/80 backdrop-blur-sm rounded-2xl py-16 px-8 md:px-16">
+        <div className="text-center max-w-3xl mx-auto py-16 px-8 md:px-16">
           {/* Pre-heading */}
           <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-12">
             Together with their families
@@ -45,14 +45,13 @@ const Index = () => {
             <p className="font-body text-base text-muted-foreground tracking-wider">
               at 11 o'clock
             </p>
+            <p className="font-body text-sm text-muted-foreground tracking-wide pt-1">
+              Engrafted Word Church, 5 W Broad St, Cookeville, TN
+            </p>
           </div>
 
-          <p className="animate-fade-in-up-delay-3 font-body text-sm text-muted-foreground mt-6 tracking-wide">
-            Engrafted Word Church, 5 W Broad St, Cookeville, TN
-          </p>
-
           {/* Scroll hint */}
-          <div className="animate-fade-in-up-delay-3 mt-14">
+          <div className="animate-fade-in-up-delay-3 mt-20">
             <Heart className="w-5 h-5 text-primary mx-auto animate-bounce" />
           </div>
         </div>
