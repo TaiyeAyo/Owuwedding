@@ -51,7 +51,7 @@ const Index = () => {
           </div>
 
           {/* Scroll hint */}
-          <div className="animate-fade-in-up-delay-3 mt-28">
+          <div className="animate-fade-in-up-delay-3 mt-36">
             <Heart className="w-5 h-5 text-primary mx-auto animate-bounce" />
           </div>
         </div>
