@@ -19,7 +19,7 @@ const Index = () => {
       >
         <div className="text-center max-w-3xl mx-auto py-16 px-8 md:px-16">
           {/* Pre-heading */}
-          <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-[122px]">
+          <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-[133px]">
             Together with their families
           </p>
 
