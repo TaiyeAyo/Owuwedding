@@ -64,7 +64,7 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         from: "Wedding RSVP <onboarding@resend.dev>",
-        to: ["isbadoe4@gmail.com"],
+        to: ["taizzywed@gmail.com"],
         subject,
         html: htmlBody,
       }),
