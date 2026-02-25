@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { Plus, Minus, Heart, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import WeddingCard from "@/components/WeddingCard";
 
 const RSVP = () => {
   const navigate = useNavigate();
@@ -65,34 +66,22 @@ const RSVP = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center px-4">
-        <div className="text-center max-w-md animate-fade-in-up">
-          <Heart className="w-16 h-16 text-primary mx-auto mb-6" fill="currentColor" />
-          <h1 className="text-4xl font-display mb-4 text-foreground">Thank You!</h1>
-          <p className="text-lg text-muted-foreground font-body mb-2">
+      <div className="min-h-screen bg-background flex items-center justify-center px-4 py-12">
+        <div className="text-center max-w-lg animate-fade-in-up">
+          <Heart className="w-12 h-12 text-primary mx-auto mb-4" fill="currentColor" />
+          <h1 className="text-4xl font-display mb-2 text-foreground">Thank You!</h1>
+          <p className="text-lg text-muted-foreground font-body mb-8">
             We're so excited to celebrate with you.
           </p>
-          <p className="text-muted-foreground font-body mb-6">
-            {name}
-            {companions.filter((c) => c.trim()).length > 0 &&
-              ` + ${companions.filter((c) => c.trim()).length} guest${companions.filter((c) => c.trim()).length > 1 ? "s" : ""}`}
-          </p>
 
-          <div className="bg-card rounded-lg p-6 border border-border shadow-sm mb-8 text-left max-w-sm mx-auto">
-            <p className="text-primary tracking-[0.2em] uppercase text-xs font-body mb-2">Ceremony</p>
-            <p className="font-body text-foreground text-sm">Engrafted Word Church</p>
-            <p className="font-body text-muted-foreground text-sm">5 W Broad St, Cookeville, TN</p>
-
-            <div className="gold-divider w-16 my-4" />
-
-            <p className="text-primary tracking-[0.2em] uppercase text-xs font-body mb-2">Reception</p>
-            <p className="font-body text-foreground text-sm">TNTech RUC Hall</p>
-            <p className="font-body text-muted-foreground text-sm">1000 N. Dixie Ave, Cookeville, TN 38505</p>
-          </div>
+          <WeddingCard
+            guestName={name}
+            companions={companions.filter((c) => c.trim())}
+          />
 
           <button
             onClick={() => navigate("/")}
-            className="text-primary underline underline-offset-4 hover:text-gold-dark transition-colors font-body text-lg"
+            className="mt-8 text-primary underline underline-offset-4 hover:text-gold-dark transition-colors font-body text-lg"
           >
             Back to Home
           </button>
