@@ -4,13 +4,15 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { Plus, Minus, Heart } from "lucide-react";
+import { Plus, Minus, Heart, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const RSVP = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [companions, setCompanions] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const addCompanion = () => {
     setCompanions([...companions, ""]);
@@ -26,33 +28,39 @@ const RSVP = () => {
     setCompanions(updated);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) {
       toast.error("Please enter your name");
       return;
     }
 
-    // Save RSVP to localStorage
-    const existingRsvps = JSON.parse(localStorage.getItem("wedding-rsvps") || "[]");
-    const rsvpEntry = {
-      name: name.trim(),
-      companions: companions.filter((c) => c.trim()),
-      totalGuests: 1 + companions.filter((c) => c.trim()).length,
-      timestamp: new Date().toISOString(),
-    };
-    existingRsvps.push(rsvpEntry);
-    localStorage.setItem("wedding-rsvps", JSON.stringify(existingRsvps));
+    setLoading(true);
+    const filteredCompanions = companions.filter((c) => c.trim());
+    const totalGuests = 1 + filteredCompanions.length;
 
-    // Update total count
-    const totalRsvp = existingRsvps.reduce(
-      (sum: number, r: { totalGuests: number }) => sum + r.totalGuests,
-      0
-    );
-    localStorage.setItem("wedding-rsvp-total", totalRsvp.toString());
+    try {
+      const { data, error } = await supabase.functions.invoke("send-notification", {
+        body: {
+          type: "rsvp",
+          data: {
+            name: name.trim(),
+            companions: filteredCompanions,
+            totalGuests,
+          },
+        },
+      });
 
-    setSubmitted(true);
-    toast.success("Thank you for your RSVP!");
+      if (error) throw error;
+
+      setSubmitted(true);
+      toast.success("Thank you for your RSVP!");
+    } catch (err) {
+      console.error("RSVP submission error:", err);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -178,9 +186,10 @@ const RSVP = () => {
 
           <Button
             type="submit"
+            disabled={loading}
             className="w-full bg-gold-gradient text-primary-foreground font-body text-lg py-6 tracking-wider hover:opacity-90 transition-opacity"
           >
-            Confirm RSVP
+            {loading ? <><Loader2 className="w-5 h-5 animate-spin mr-2" /> Submitting...</> : "Confirm RSVP"}
           </Button>
 
           <div className="text-center">
