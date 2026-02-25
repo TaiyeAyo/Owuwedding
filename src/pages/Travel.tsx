@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { Plane, Hotel, Clock, ArrowLeft } from "lucide-react";
+import { Plane, Hotel, Clock, ArrowLeft, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Travel = () => {
   const navigate = useNavigate();
@@ -12,8 +13,9 @@ const Travel = () => {
   const [arrivalDate, setArrivalDate] = useState("");
   const [arrivalTime, setArrivalTime] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) {
       toast.error("Please enter your name");
@@ -24,17 +26,29 @@ const Travel = () => {
       return;
     }
 
-    const existingArrivals = JSON.parse(localStorage.getItem("wedding-arrivals") || "[]");
-    existingArrivals.push({
-      name: name.trim(),
-      arrivalDate,
-      arrivalTime,
-      timestamp: new Date().toISOString(),
-    });
-    localStorage.setItem("wedding-arrivals", JSON.stringify(existingArrivals));
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-notification", {
+        body: {
+          type: "travel",
+          data: {
+            name: name.trim(),
+            arrivalDate,
+            arrivalTime,
+          },
+        },
+      });
 
-    setSubmitted(true);
-    toast.success("Travel details saved!");
+      if (error) throw error;
+
+      setSubmitted(true);
+      toast.success("Travel details saved!");
+    } catch (err) {
+      console.error("Travel submission error:", err);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -127,9 +141,10 @@ const Travel = () => {
 
           <Button
             type="submit"
+            disabled={loading}
             className="w-full bg-gold-gradient text-primary-foreground font-body text-lg py-6 tracking-wider hover:opacity-90 transition-opacity"
           >
-            Submit Arrival Details
+            {loading ? <><Loader2 className="w-5 h-5 animate-spin mr-2" /> Submitting...</> : "Submit Arrival Details"}
           </Button>
         </form>
 
