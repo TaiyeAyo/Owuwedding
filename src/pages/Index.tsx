@@ -14,9 +14,9 @@ const Index = () => {
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+          backgroundPosition: "center"
+        }}>
+
         <div className="text-center max-w-3xl mx-auto py-16 px-8 md:px-16">
           {/* Pre-heading */}
           <p className="animate-fade-in-up text-primary tracking-[0.4em] uppercase text-sm font-body mb-[133px]">
@@ -92,8 +92,8 @@ const Index = () => {
                 size={180}
                 bgColor="transparent"
                 fgColor="hsl(30, 10%, 20%)"
-                level="M"
-              />
+                level="M" />
+
             </div>
 
             <p className="font-body text-muted-foreground mb-4">
@@ -102,8 +102,8 @@ const Index = () => {
 
             <Link
               to="/rsvp"
-              className="inline-flex items-center gap-2 bg-gold-gradient text-primary-foreground px-8 py-3 rounded font-body text-lg tracking-wider hover:opacity-90 transition-opacity"
-            >
+              className="inline-flex items-center gap-2 bg-gold-gradient text-primary-foreground px-8 py-3 rounded font-body text-lg tracking-wider hover:opacity-90 transition-opacity">
+
               RSVP Now
             </Link>
           </div>
@@ -116,17 +116,17 @@ const Index = () => {
             <h3 className="font-display text-3xl text-foreground mb-6">Registry</h3>
             <div className="gold-divider w-24 mx-auto mb-8" />
 
-            <p className="font-body text-muted-foreground max-w-sm mx-auto mb-8 leading-relaxed">
-              Your love and presence at our wedding is the greatest gift of all. However, if you wish to
-              honour us with a gift, we have curated a registry for your convenience.
+            <p className="font-body text-muted-foreground max-w-sm mx-auto mb-8 leading-relaxed">Your love and presence at our wedding is the greatest gift of all. However, if you wish to honour us with a gift, we have curated a registry for your convenience. Thank you in advance.
+
+
             </p>
 
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors"
-            >
+              className="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+
               View Registry
               <ExternalLink className="w-4 h-4" />
             </a>
@@ -147,8 +147,8 @@ const Index = () => {
           </p>
           <Link
             to="/travel"
-            className="inline-flex items-center gap-2 bg-gold-gradient text-primary-foreground px-8 py-3 rounded font-body text-lg tracking-wider hover:opacity-90 transition-opacity"
-          >
+            className="inline-flex items-center gap-2 bg-gold-gradient text-primary-foreground px-8 py-3 rounded font-body text-lg tracking-wider hover:opacity-90 transition-opacity">
+
             <Plane className="w-5 h-5" />
             Travel Details
           </Link>
@@ -165,8 +165,8 @@ const Index = () => {
         </p>
         <Heart className="w-4 h-4 text-primary mx-auto mt-4" fill="currentColor" />
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
