@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import html2canvas from "html2canvas";
+import { QRCodeCanvas } from "qrcode.react";
 
 interface WeddingCardProps {
   guestName: string;
@@ -306,6 +307,22 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               >
                 5 W Broad St, Cookeville, TN
               </p>
+
+              {/* QR Code */}
+              <div style={{ margin: "0 auto 20px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ padding: "8px", background: "white", borderRadius: "6px", border: `1px solid ${goldLight}` }}>
+                  <QRCodeCanvas
+                    value="https://id-preview--50c83ba4-eef8-4342-bcb2-4d8746df8b60.lovable.app"
+                    size={80}
+                    fgColor={gold}
+                    bgColor="white"
+                    level="M"
+                  />
+                </div>
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "10px", color: textMuted, marginTop: "6px", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                  Visit Our Wedding Website
+                </p>
+              </div>
 
               {/* Divider */}
               <div style={{ height: "1px", width: "80px", margin: "0 auto 20px", background: dividerGradient }} />
