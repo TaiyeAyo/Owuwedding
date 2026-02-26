@@ -121,15 +121,24 @@ const Index = () => {
 
             </p>
 
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
-
-              View Registry
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            <div className="flex flex-col gap-4">
+              <a
+                href="https://www.amazon.com/wedding/share/owuwedding"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+                Amazon Registry
+                <ExternalLink className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.walmart.com/registry/wr/83eda437-dbdc-482e-8d9b-607de05c9f3c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+                Walmart Registry
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
