@@ -109,9 +109,11 @@ const RSVP = () => {
           </p>
           <h1 className="text-5xl font-display text-foreground mb-2">RSVP</h1>
           <div className="gold-divider w-32 mx-auto mt-4" />
-          <p className="mt-4 text-sm text-primary font-body font-semibold bg-primary/10 border border-primary/30 rounded px-4 py-2 inline-block">
-            Please make sure to add the names of all guests you plan to come with, including children.
-          </p>
+          <div className="mt-6 bg-primary/15 border-2 border-primary rounded-lg px-6 py-4">
+            <p className="text-base text-primary font-body font-bold">
+              ⚠️ Please make sure to add the names of all guests you plan to come with, including children.
+            </p>
+          </div>
         </div>
 
         {/* Form */}
