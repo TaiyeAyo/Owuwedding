@@ -14,7 +14,21 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      rsvp_counter: {
+        Row: {
+          id: number
+          total_guests: number
+        }
+        Insert: {
+          id?: number
+          total_guests?: number
+        }
+        Update: {
+          id?: number
+          total_guests?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
