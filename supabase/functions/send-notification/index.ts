@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -27,6 +28,19 @@ serve(async (req) => {
 
     if (type === "rsvp") {
       const { name, companions, totalGuests } = data;
+
+      // Increment cumulative RSVP counter
+      const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+      const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+      const sb = createClient(supabaseUrl, supabaseKey);
+
+      // Atomically increment total_guests
+      await sb.rpc("increment_rsvp_count", { guest_count: totalGuests });
+
+      // Fetch updated total
+      const { data: counterData } = await sb.from("rsvp_counter").select("total_guests").eq("id", 1).single();
+      const cumulativeTotal = counterData?.total_guests ?? totalGuests;
+
       subject = `🎉 New RSVP: ${name} (${totalGuests} guest${totalGuests > 1 ? "s" : ""})`;
       const companionList =
         companions && companions.length > 0
@@ -37,6 +51,8 @@ serve(async (req) => {
         <p><strong>Name:</strong> ${name}</p>
         ${companionList}
         <p><strong>Total attending:</strong> ${totalGuests}</p>
+        <hr style="border:none;border-top:1px solid #ddd;margin:16px 0;" />
+        <p><strong>📊 Total RSVP Count (all submissions):</strong> ${cumulativeTotal} guest${cumulativeTotal > 1 ? "s" : ""}</p>
         <p style="color:#888;font-size:12px;">Submitted at ${new Date().toLocaleString()}</p>
       `;
     } else if (type === "travel") {
