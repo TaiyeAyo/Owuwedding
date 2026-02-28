@@ -138,6 +138,14 @@ const Index = () => {
                 Walmart Registry
                 <ExternalLink className="w-4 h-4" />
               </a>
+              <a
+                href="https://cash.app/$TaiyeOwu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+                CashApp
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
