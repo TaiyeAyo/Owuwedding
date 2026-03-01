@@ -11,6 +11,7 @@ import WeddingCard from "@/components/WeddingCard";
 const RSVP = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [companions, setCompanions] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -46,6 +47,7 @@ const RSVP = () => {
           type: "rsvp",
           data: {
             name: name.trim(),
+            email: email.trim() || undefined,
             companions: filteredCompanions,
             totalGuests,
           },
@@ -131,6 +133,20 @@ const RSVP = () => {
                   placeholder="Enter your full name"
                   className="mt-2 bg-background border-border font-body text-base"
                   required
+                />
+              </div>
+
+              <div>
+                <Label htmlFor="email" className="text-foreground font-body text-base">
+                  Email <span className="text-muted-foreground font-normal">(optional)</span>
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email address"
+                  className="mt-2 bg-background border-border font-body text-base"
                 />
               </div>
 
