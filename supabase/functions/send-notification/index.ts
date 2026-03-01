@@ -27,7 +27,7 @@ serve(async (req) => {
     let htmlBody: string;
 
     if (type === "rsvp") {
-      const { name, companions, totalGuests } = data;
+      const { name, email, companions, totalGuests } = data;
 
       // Increment cumulative RSVP counter
       const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
@@ -46,9 +46,11 @@ serve(async (req) => {
         companions && companions.length > 0
           ? `<p><strong>Additional guests:</strong> ${companions.join(", ")}</p>`
           : "<p>No additional guests.</p>";
+      const emailLine = email ? `<p><strong>Email:</strong> ${email}</p>` : "";
       htmlBody = `
         <h2>New RSVP Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
+        ${emailLine}
         ${companionList}
         <p><strong>Total attending:</strong> ${totalGuests}</p>
         <hr style="border:none;border-top:1px solid #ddd;margin:16px 0;" />
