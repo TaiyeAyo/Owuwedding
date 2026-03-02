@@ -84,9 +84,13 @@ const RSVP = () => {
           {/* Reception Venue */}
           <div className="mt-8 bg-card border border-border rounded-lg p-6 text-center">
             <p className="text-primary tracking-[0.2em] uppercase text-xs font-body mb-2">Reception</p>
-            <p className="font-display text-xl text-foreground mb-1">TNTech RUC Hall</p>
+            <p className="font-display text-xl text-foreground mb-1">The Multipurpose Room</p>
             <p className="text-muted-foreground font-body text-sm">
-              1000 N. Dixie Ave, Cookeville, TN 38505
+              Second Floor (Room 282), RUC
+              <br />
+              Tennessee Tech University
+              <br />
+              1000 N Dixie Ave, Cookeville, TN 38505
             </p>
           </div>
 
