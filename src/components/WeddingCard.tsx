@@ -303,10 +303,49 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   fontFamily: "'Cormorant Garamond', serif",
                   fontSize: "12px",
                   color: textMuted,
-                  marginBottom: "24px",
+                  marginBottom: "16px",
                 }}
               >
                 5 W Broad St, Cookeville, TN
+              </p>
+
+              {/* Reception Venue */}
+              <p
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: "13px",
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: gold,
+                  marginBottom: "4px",
+                  fontWeight: 600,
+                }}
+              >
+                Reception
+              </p>
+              <p
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: "13px",
+                  color: textDark,
+                  marginBottom: "2px",
+                }}
+              >
+                The Multipurpose Room
+              </p>
+              <p
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: "12px",
+                  color: textMuted,
+                  marginBottom: "24px",
+                }}
+              >
+                Second Floor (Room 282), RUC
+                <br />
+                Tennessee Tech University
+                <br />
+                1000 N Dixie Ave, Cookeville, TN 38505
               </p>
 
               {/* QR Code */}
