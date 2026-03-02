@@ -68,7 +68,7 @@ const RSVP = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center px-4 py-12">
+      <div className="min-h-screen bg-background flex items-start justify-center px-4 py-12">
         <div className="text-center max-w-lg animate-fade-in-up">
           <Heart className="w-12 h-12 text-primary mx-auto mb-4" fill="currentColor" />
           <h1 className="text-4xl font-display mb-2 text-foreground">Thank You!</h1>
