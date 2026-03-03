@@ -75,29 +75,13 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
         style={{
           width: "420px",
           height: "588px",
-          background: `linear-gradient(160deg, ${cream}, ${ivory}, hsl(36 40% 85%))`,
+          background: `linear-gradient(170deg, ${cream}, ${ivory} 40%, ${champagne})`,
           borderRadius: "12px",
-          padding: "3px",
+          padding: "48px 36px",
           position: "relative",
+          overflow: "hidden",
         }}
       >
-        {/* Gold border effect */}
-        <div
-          style={{
-            background: `linear-gradient(160deg, ${gold}, ${goldLight}, ${gold})`,
-            borderRadius: "12px",
-            padding: "2px",
-          }}
-        >
-          <div
-            style={{
-              background: `linear-gradient(170deg, ${cream}, ${ivory} 40%, ${champagne})`,
-              borderRadius: "10px",
-              padding: "48px 36px",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
             {/* Floral corner ornaments */}
             <img
               src={floralCorner}
@@ -403,9 +387,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   &amp; {filteredCompanions.join(", ")}
                 </p>
               )}
-            </div>
           </div>
-        </div>
       </div>
 
       {/* Download Button */}
