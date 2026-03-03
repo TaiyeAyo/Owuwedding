@@ -68,7 +68,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
   </svg>`)}`;
 
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
       {/* The Card */}
       <div
         ref={cardRef}
@@ -409,23 +409,25 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
       </div>
 
       {/* Download Button */}
-      <Button
-        onClick={handleDownload}
-        disabled={downloading}
-        className="bg-gold-gradient text-primary-foreground font-body tracking-wider hover:opacity-90 transition-opacity px-8"
-      >
-        {downloading ? (
-          <>
-            <Loader2 className="w-4 h-4 animate-spin mr-2" />
-            Generating...
-          </>
-        ) : (
-          <>
-            <Download className="w-4 h-4 mr-2" />
-            Download Invitation Card
-          </>
-        )}
-      </Button>
+      <div className="flex md:h-[588px] items-center">
+        <Button
+          onClick={handleDownload}
+          disabled={downloading}
+          className="bg-gold-gradient text-primary-foreground font-body tracking-wider hover:opacity-90 transition-opacity px-8 whitespace-nowrap"
+        >
+          {downloading ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin mr-2" />
+              Generating...
+            </>
+          ) : (
+            <>
+              <Download className="w-4 h-4 mr-2" />
+              Download Invitation Card
+            </>
+          )}
+        </Button>
+      </div>
     </div>
   );
 };
