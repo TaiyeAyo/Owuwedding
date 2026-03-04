@@ -74,7 +74,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
         ref={cardRef}
         style={{
           width: "420px",
-          height: "588px",
+          minHeight: "588px",
           background: `linear-gradient(160deg, ${cream}, ${ivory}, hsl(36 40% 85%))`,
           borderRadius: "12px",
           padding: "3px",
@@ -409,7 +409,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
       </div>
 
       {/* Download Button */}
-      <div className="flex md:h-[588px] items-center">
+      <div className="flex items-center">
         <Button
           onClick={handleDownload}
           disabled={downloading}
