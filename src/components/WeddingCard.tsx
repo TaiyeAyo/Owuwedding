@@ -94,7 +94,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
             style={{
               background: `linear-gradient(170deg, ${cream}, ${ivory} 40%, ${champagne})`,
               borderRadius: "10px",
-              padding: "32px 28px",
+              padding: "24px 28px 32px",
               position: "relative",
               overflow: "hidden",
               height: "100%",
