@@ -116,9 +116,7 @@ const Index = () => {
             <h3 className="font-display text-3xl text-foreground mb-6">Registry</h3>
             <div className="gold-divider w-24 mx-auto mb-8" />
 
-            <p className="font-body text-muted-foreground max-w-sm mx-auto mb-8 leading-relaxed">Your love and presence at our wedding is the greatest gift of all. However, if you wish to honour us with a gift, we have curated a registry for your convenience. Thank you in advance.
-
-
+            <p className="font-body text-muted-foreground max-w-sm mx-auto mb-8 leading-relaxed">Your love and presence at our wedding is the greatest gift. However, if you wish to honor us with cash or a gift, we have curated a registry below for your convenience. Thank you in advance.
             </p>
 
             <div className="flex flex-col gap-4">
