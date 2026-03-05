@@ -427,24 +427,41 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                 1000 N Dixie Ave, Cookeville, TN 38505
               </p>
 
+              {/* RSVP Note */}
+              <p
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: "10px",
+                  color: textMuted,
+                  fontStyle: "italic",
+                  lineHeight: 1.5,
+                  marginBottom: "8px",
+                  maxWidth: "260px",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
+                We'd love to celebrate with you! Kindly RSVP for yourself and all guests in your party — including little ones — so we can prepare to welcome everyone.
+              </p>
+
               {/* QR Code */}
-              <div style={{ margin: "0 auto 12px", display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <div style={{ padding: "6px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}>
+              <div style={{ margin: "0 auto 8px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ padding: "4px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}>
                   <QRCodeCanvas
                     value="https://id-preview--50c83ba4-eef8-4342-bcb2-4d8746df8b60.lovable.app"
-                    size={60}
+                    size={40}
                     fgColor={gold}
                     bgColor="white"
                     level="M"
                   />
                 </div>
-                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "9px", color: textMuted, marginTop: "4px", letterSpacing: "0.15em", textTransform: "uppercase" }}>
-                  Visit Our Wedding Website
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "8px", color: textMuted, marginTop: "3px", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                  RSVP at Our Wedding Website
                 </p>
               </div>
 
               {/* Divider */}
-              <div style={{ height: "1px", width: "60px", margin: "0 auto 10px", background: dividerGradient }} />
+              <div style={{ height: "1px", width: "60px", margin: "0 auto 8px", background: dividerGradient }} />
 
               {/* Guest name */}
               <p
