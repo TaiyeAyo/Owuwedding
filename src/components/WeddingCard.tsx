@@ -67,6 +67,55 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
     </g>
   </svg>`)}`;
 
+  // Side floral vine SVG for left and right borders
+  const floralSide = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 300" fill="none">
+    <g opacity="0.3">
+      <!-- Main vine stem -->
+      <path d="M20 10 C18 40 22 60 20 90 C18 120 22 140 20 170 C18 200 22 220 20 250 C18 270 20 290 20 290" stroke="${gold}" stroke-width="0.8" fill="none"/>
+      <!-- Flower 1 -->
+      <circle cx="20" cy="45" r="6" fill="none" stroke="${gold}" stroke-width="0.6" opacity="0.5"/>
+      <circle cx="20" cy="45" r="2.5" fill="${gold}" opacity="0.4"/>
+      <path d="M14 45 C14 39 20 36 20 39" fill="${gold}" opacity="0.25"/>
+      <path d="M26 45 C26 39 20 36 20 39" fill="${gold}" opacity="0.25"/>
+      <path d="M20 39 C16 39 14 45 17 45" fill="${goldLight}" opacity="0.2"/>
+      <path d="M20 39 C24 39 26 45 23 45" fill="${goldLight}" opacity="0.2"/>
+      <path d="M20 51 C16 51 14 45 17 45" fill="${gold}" opacity="0.2"/>
+      <path d="M20 51 C24 51 26 45 23 45" fill="${gold}" opacity="0.2"/>
+      <!-- Leaves near flower 1 -->
+      <path d="M20 55 C12 52 8 58 14 60 C18 56 20 55 20 55Z" fill="${gold}" opacity="0.25"/>
+      <path d="M20 35 C28 32 32 38 26 40 C22 36 20 35 20 35Z" fill="${goldLight}" opacity="0.2"/>
+      <!-- Flower 2 -->
+      <circle cx="20" cy="120" r="5" fill="none" stroke="${goldLight}" stroke-width="0.6" opacity="0.45"/>
+      <circle cx="20" cy="120" r="2" fill="${goldLight}" opacity="0.35"/>
+      <path d="M15 120 C15 115 20 113 20 116" fill="${goldLight}" opacity="0.2"/>
+      <path d="M25 120 C25 115 20 113 20 116" fill="${goldLight}" opacity="0.2"/>
+      <path d="M20 125 C16 125 15 120 18 120" fill="${gold}" opacity="0.2"/>
+      <path d="M20 125 C24 125 25 120 22 120" fill="${gold}" opacity="0.2"/>
+      <!-- Leaves near flower 2 -->
+      <path d="M20 130 C28 127 32 133 26 135 C22 131 20 130 20 130Z" fill="${gold}" opacity="0.2"/>
+      <path d="M20 110 C12 107 8 113 14 115 C18 111 20 110 20 110Z" fill="${goldLight}" opacity="0.18"/>
+      <!-- Flower 3 -->
+      <circle cx="20" cy="195" r="5.5" fill="none" stroke="${gold}" stroke-width="0.6" opacity="0.4"/>
+      <circle cx="20" cy="195" r="2.2" fill="${gold}" opacity="0.35"/>
+      <path d="M14.5 195 C14.5 189.5 20 187 20 190" fill="${gold}" opacity="0.22"/>
+      <path d="M25.5 195 C25.5 189.5 20 187 20 190" fill="${gold}" opacity="0.22"/>
+      <path d="M20 200.5 C16 200.5 14.5 195 17.5 195" fill="${goldLight}" opacity="0.2"/>
+      <path d="M20 200.5 C24 200.5 25.5 195 22.5 195" fill="${goldLight}" opacity="0.2"/>
+      <!-- Leaves near flower 3 -->
+      <path d="M20 205 C12 202 8 208 14 210 C18 206 20 205 20 205Z" fill="${gold}" opacity="0.22"/>
+      <path d="M20 185 C28 182 32 188 26 190 C22 186 20 185 20 185Z" fill="${goldLight}" opacity="0.18"/>
+      <!-- Small buds -->
+      <circle cx="16" cy="75" r="2" fill="${gold}" opacity="0.25"/>
+      <circle cx="24" cy="155" r="2" fill="${goldLight}" opacity="0.22"/>
+      <circle cx="16" cy="235" r="2" fill="${gold}" opacity="0.2"/>
+      <circle cx="24" cy="265" r="1.8" fill="${goldLight}" opacity="0.18"/>
+      <!-- Small leaves along stem -->
+      <path d="M20 75 C14 73 12 77 16 78Z" fill="${goldLight}" opacity="0.18"/>
+      <path d="M20 155 C26 153 28 157 24 158Z" fill="${gold}" opacity="0.15"/>
+      <path d="M20 235 C14 233 12 237 16 238Z" fill="${goldLight}" opacity="0.15"/>
+    </g>
+  </svg>`)}`;
+
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
       {/* The Card */}
@@ -148,6 +197,33 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                 width: "80px",
                 height: "80px",
                 transform: "scale(-1, -1)",
+              }}
+            />
+
+            {/* Side floral vines - left */}
+            <img
+              src={floralSide}
+              alt=""
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "2px",
+                width: "28px",
+                height: "260px",
+                transform: "translateY(-50%)",
+              }}
+            />
+            {/* Side floral vines - right */}
+            <img
+              src={floralSide}
+              alt=""
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "2px",
+                width: "28px",
+                height: "260px",
+                transform: "translateY(-50%) scaleX(-1)",
               }}
             />
 
