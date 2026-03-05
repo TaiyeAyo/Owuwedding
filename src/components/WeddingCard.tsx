@@ -252,15 +252,15 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "12px",
+                  fontSize: "11px",
                   color: textDark,
-                  lineHeight: 1.5,
-                  marginBottom: "10px",
+                  lineHeight: 1.4,
+                  marginBottom: "6px",
                 }}
               >
                 Mr. and Mrs. Francis Owu,
                 <br />
-                <span style={{ fontSize: "12px", color: textMuted }}>
+                <span style={{ fontSize: "11px", color: textMuted }}>
                   Request the pleasure of your company
                   <br />
                   at the marriage of their son
@@ -268,17 +268,17 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
 
               {/* Divider */}
-              <div style={{ height: "1px", width: "60px", margin: "0 auto 10px", background: dividerGradient }} />
+              <div style={{ height: "1px", width: "50px", margin: "0 auto 6px", background: dividerGradient }} />
 
               {/* Groom Name */}
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: "28px",
+                  fontSize: "24px",
                   fontWeight: 500,
                   color: textDark,
                   lineHeight: 1.2,
-                  marginBottom: "2px",
+                  marginBottom: "1px",
                 }}
               >
                 Taiye Owu
@@ -288,10 +288,10 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontStyle: "italic",
                   color: gold,
-                  margin: "4px 0",
+                  margin: "2px 0",
                 }}
               >
                 &amp;
@@ -301,11 +301,11 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: "28px",
+                  fontSize: "24px",
                   fontWeight: 500,
                   color: textDark,
                   lineHeight: 1.2,
-                  marginBottom: "4px",
+                  marginBottom: "2px",
                 }}
               >
                 Isabel Badoe
@@ -315,10 +315,10 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "11px",
+                  fontSize: "10px",
                   color: textMuted,
-                  lineHeight: 1.5,
-                  marginBottom: "12px",
+                  lineHeight: 1.4,
+                  marginBottom: "6px",
                 }}
               >
                 Daughter of
@@ -327,16 +327,16 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
 
               {/* Divider */}
-              <div style={{ height: "1px", width: "60px", margin: "0 auto 12px", background: dividerGradient }} />
+              <div style={{ height: "1px", width: "50px", margin: "0 auto 6px", background: dividerGradient }} />
 
               {/* Date */}
               <p
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: "14px",
+                  fontSize: "13px",
                   color: gold,
                   letterSpacing: "0.15em",
-                  marginBottom: "2px",
+                  marginBottom: "1px",
                   fontWeight: 600,
                 }}
               >
@@ -345,9 +345,9 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "12px",
+                  fontSize: "11px",
                   color: textMuted,
-                  marginBottom: "10px",
+                  marginBottom: "6px",
                 }}
               >
                 at 11 o'clock
@@ -357,11 +357,11 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "12px",
+                  fontSize: "10px",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase" as const,
                   color: gold,
-                  marginBottom: "2px",
+                  marginBottom: "1px",
                   fontWeight: 600,
                 }}
               >
@@ -370,9 +370,9 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "12px",
+                  fontSize: "11px",
                   color: textDark,
-                  marginBottom: "1px",
+                  marginBottom: "0px",
                 }}
               >
                 Engrafted Word Church
@@ -380,9 +380,9 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "11px",
+                  fontSize: "10px",
                   color: textMuted,
-                  marginBottom: "10px",
+                  marginBottom: "6px",
                 }}
               >
                 5 W Broad St, Cookeville, TN
@@ -392,11 +392,11 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "12px",
+                  fontSize: "10px",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase" as const,
                   color: gold,
-                  marginBottom: "2px",
+                  marginBottom: "1px",
                   fontWeight: 600,
                 }}
               >
@@ -405,9 +405,9 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "12px",
+                  fontSize: "11px",
                   color: textDark,
-                  marginBottom: "1px",
+                  marginBottom: "0px",
                 }}
               >
                 The Multipurpose Room
@@ -415,9 +415,10 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "11px",
+                  fontSize: "10px",
                   color: textMuted,
-                  marginBottom: "10px",
+                  lineHeight: 1.3,
+                  marginBottom: "6px",
                 }}
               >
                 Second Floor (Room 282), RUC
@@ -431,12 +432,12 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "10px",
+                  fontSize: "9px",
                   color: textMuted,
                   fontStyle: "italic",
-                  lineHeight: 1.5,
-                  marginBottom: "8px",
-                  maxWidth: "260px",
+                  lineHeight: 1.4,
+                  marginBottom: "5px",
+                  maxWidth: "250px",
                   marginLeft: "auto",
                   marginRight: "auto",
                 }}
@@ -445,33 +446,33 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
 
               {/* QR Code */}
-              <div style={{ margin: "0 auto 8px", display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <div style={{ padding: "4px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}>
+              <div style={{ margin: "0 auto 5px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ padding: "3px", background: "white", borderRadius: "3px", border: `1px solid ${goldLight}` }}>
                   <QRCodeCanvas
                     value="https://id-preview--50c83ba4-eef8-4342-bcb2-4d8746df8b60.lovable.app"
-                    size={40}
+                    size={36}
                     fgColor={gold}
                     bgColor="white"
                     level="M"
                   />
                 </div>
-                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "8px", color: textMuted, marginTop: "3px", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "7px", color: textMuted, marginTop: "2px", letterSpacing: "0.15em", textTransform: "uppercase" }}>
                   RSVP at Our Wedding Website
                 </p>
               </div>
 
               {/* Divider */}
-              <div style={{ height: "1px", width: "60px", margin: "0 auto 8px", background: dividerGradient }} />
+              <div style={{ height: "1px", width: "50px", margin: "0 auto 5px", background: dividerGradient }} />
 
               {/* Guest name */}
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "10px",
+                  fontSize: "9px",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase" as const,
                   color: textMuted,
-                  marginBottom: "4px",
+                  marginBottom: "2px",
                 }}
               >
                 This invitation is for
@@ -479,10 +480,10 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontWeight: 500,
                   color: textDark,
-                  marginBottom: filteredCompanions.length > 0 ? "2px" : "0",
+                  marginBottom: filteredCompanions.length > 0 ? "1px" : "0",
                 }}
               >
                 {guestName}
@@ -491,7 +492,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                 <p
                   style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "12px",
+                    fontSize: "11px",
                     color: textMuted,
                     fontStyle: "italic",
                   }}
