@@ -155,12 +155,18 @@ const Travel = () => {
             <h2 className="font-display text-2xl text-foreground">Hotel Discounts</h2>
           </div>
           <div className="gold-divider w-24 mx-auto mb-6" />
-          <p className="font-body text-muted-foreground leading-relaxed">
-            We're working on securing special hotel rates for our guests. Discount details will be shared here soon — stay tuned!
+          <p className="font-body text-muted-foreground leading-relaxed mb-4">
+            We've secured a special discounted rate for our guests at <span className="text-foreground font-semibold">Fairfield by Marriott Inn & Suites Cookeville</span>. We recommend booking early to guarantee availability!
           </p>
-          <div className="mt-6 inline-block px-6 py-3 rounded border border-border bg-background">
-            <p className="font-body text-sm text-primary tracking-wider uppercase">Coming Soon</p>
-          </div>
+          <a
+            href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1772737277798&key=GRP&app=resvlink&_branch_match_id=1558279833976245826&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uZG5MRCbm1taqGWnVtq6BwWo1RWlpqUCdeelxycV5ZcXpxbZOmcU5eemAgBVZ%2F%2BsYAAAAA%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-gold-gradient text-primary-foreground font-body tracking-wider hover:opacity-90 transition-opacity px-8 py-5 text-base">
+              Book Your Room
+            </Button>
+          </a>
         </div>
 
         <div className="text-center mt-6">
