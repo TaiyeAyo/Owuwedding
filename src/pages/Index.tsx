@@ -25,9 +25,9 @@ const Index = () => {
 
           {/* Names */}
           <h1 className="animate-fade-in-up-delay-1 font-display text-foreground leading-tight mt-[11px]">
-           <span className="block text-4xl md:text-5xl lg:text-6xl">Taiye</span>
+           <span className="block text-4xl md:text-5xl lg:text-6xl">Isabel</span>
             <span className="block text-xl md:text-2xl italic font-light text-primary my-4">&amp;</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl">Isabel</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl">Taiye</span>
           </h1>
 
           {/* Divider */}
