@@ -173,7 +173,7 @@ const Index = () => {
       <footer className="py-12 px-4 bg-card text-center">
         <div className="gold-divider w-48 mx-auto mb-8" />
         <p className="font-display text-2xl text-foreground mb-2">
-          Taiye &amp; Isabel
+          Isabel &amp; Taiye
         </p>
         <p className="font-body text-muted-foreground tracking-wider text-sm">
           With love, forever and always
