@@ -248,7 +248,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
 
             {/* Content */}
             <div style={{ textAlign: "center", position: "relative", zIndex: 1 }}>
-             {/* Parents of Groom */}
+             {/* Parents of Bride */}
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
@@ -258,19 +258,19 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginBottom: "6px",
                 }}
               >
-                Mr. and Mrs. Francis Owu,
+                Dr. and Mrs. Daniel Badoe,
                 <br />
                 <span style={{ fontSize: "11px", color: textMuted }}>
                   Request the pleasure of your company
                   <br />
-                  at the marriage of their son
+                  at the marriage of their daughter
                 </span>
               </p>
 
               {/* Divider */}
               <div style={{ height: "1px", width: "50px", margin: "0 auto 6px", background: dividerGradient }} />
 
-              {/* Groom Name */}
+              {/* Bride Name */}
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
@@ -281,7 +281,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginBottom: "1px",
                 }}
               >
-                Taiye Owu
+                Isabel Badoe
               </h2>
 
               {/* Ampersand */}
@@ -297,7 +297,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                 &amp;
               </p>
 
-              {/* Bride Name */}
+              {/* Groom Name */}
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
@@ -308,10 +308,10 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginBottom: "2px",
                 }}
               >
-                Isabel Badoe
+                Taiye Owu
               </h2>
 
-              {/* Parents of Bride */}
+              {/* Parents of Groom */}
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
@@ -321,9 +321,9 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginBottom: "6px",
                 }}
               >
-                Daughter of
+                Son of
                 <br />
-                Dr. and Mrs. Daniel Badoe
+                Mr. and Mrs. Francis Owu
               </p>
 
               {/* Divider */}
