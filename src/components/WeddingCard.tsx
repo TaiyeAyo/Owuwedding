@@ -268,7 +268,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
 
               {/* Divider */}
-              <div style={{ height: "1px", width: "50px", margin: "0 auto 6px", background: dividerGradient }} />
+              
 
               {/* Bride Name */}
               <h2
