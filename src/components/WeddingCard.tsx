@@ -446,24 +446,24 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
 
               {/* QR Code */}
-              <div style={{ margin: "0 auto 5px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "8px" }}>
-                <div style={{ padding: "4px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}>
+              <div style={{ margin: "0 auto 8px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "12px" }}>
+                <div style={{ padding: "5px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}>
                   <QRCodeCanvas
                     value="https://id-preview--50c83ba4-eef8-4342-bcb2-4d8746df8b60.lovable.app"
-                    size={52}
+                    size={60}
                     fgColor={gold}
                     bgColor="white"
                     level="M" />
                   
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-                  <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "8px", color: textMuted, letterSpacing: "0.1em", textTransform: "uppercase", margin: 0, lineHeight: 1.3 }}>
+                  <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "10px", color: textMuted, letterSpacing: "0.1em", textTransform: "uppercase", margin: 0, lineHeight: 1.4 }}>
                     RSVP at Our
                   </p>
-                  <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "8px", color: textMuted, letterSpacing: "0.1em", textTransform: "uppercase", margin: 0, lineHeight: 1.3 }}>
+                  <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "10px", color: textMuted, letterSpacing: "0.1em", textTransform: "uppercase", margin: 0, lineHeight: 1.4 }}>
                     Wedding Website
                   </p>
-                  <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "7px", color: gold, margin: "2px 0 0", lineHeight: 1.2, wordBreak: "break-all" }}>
+                  <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "9px", color: gold, margin: "3px 0 0", lineHeight: 1.2, wordBreak: "break-all" }}>
                     owuwedding.com
                   </p>
                 </div>
