@@ -119,22 +119,22 @@ const Index = () => {
             <p className="font-body text-muted-foreground max-w-sm mx-auto mb-8 leading-relaxed">Your love and presence at our wedding is the greatest gift. However, if you wish to honor us with cash or a gift, we have curated a registry below for your convenience. Thank you in advance.
             </p>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-6">
               <a
                 href="https://www.amazon.com/wedding/share/owuwedding"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+                className="inline-flex items-center justify-center gap-3 border-2 border-primary text-primary px-10 py-4 rounded font-body text-xl tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
                 Amazon Registry
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-5 h-5" />
               </a>
               <a
                 href="https://cash.app/$TaiyeOwu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded font-body text-lg tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+                className="inline-flex items-center justify-center gap-3 border-2 border-primary text-primary px-10 py-4 rounded font-body text-xl tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
                 CashApp
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-5 h-5" />
               </a>
             </div>
           </div>
