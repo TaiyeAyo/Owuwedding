@@ -446,7 +446,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
 
               {/* QR Code */}
-              <div style={{ margin: "0 auto 8px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "12px" }}>
+              <div style={{ margin: "8px auto 8px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "12px" }}>
                 <div style={{ padding: "5px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}>
                   <QRCodeCanvas
                     value="https://id-preview--50c83ba4-eef8-4342-bcb2-4d8746df8b60.lovable.app"
