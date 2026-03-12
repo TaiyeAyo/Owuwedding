@@ -45,7 +45,7 @@ const Index = () => {
             <p className="font-body text-base text-muted-foreground tracking-wider">
               at 11 o'clock
             </p>
-            <p className="font-body text-sm text-muted-foreground tracking-wide pt-1">
+            <p className="font-body text-base font-semibold text-muted-foreground tracking-wide pt-1">
               Engrafted Word Church, 5 W Broad St, Cookeville, TN
             </p>
           </div>
