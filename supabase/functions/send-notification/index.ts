@@ -88,6 +88,48 @@ serve(async (req) => {
       }),
     });
 
+    // Send confirmation email to guest if they provided an email
+    if (type === "rsvp" && data.email) {
+      const confirmationHtml = `
+        <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; padding: 32px; color: #333;">
+          <h1 style="text-align: center; color: #8B7355; font-size: 28px;">Thank You for Your RSVP!</h1>
+          <p style="text-align: center; font-size: 16px;">Dear ${data.name}, we're so excited to celebrate with you!</p>
+          <hr style="border: none; border-top: 1px solid #d4c5a9; margin: 24px 0;" />
+
+          <h2 style="color: #8B7355; font-size: 20px;">📍 Ceremony</h2>
+          <p style="font-size: 15px; line-height: 1.6;">
+            <strong>Engrafted Word Church</strong><br/>
+            5 W Broad St, Cookeville, TN<br/>
+            <strong>Date:</strong> August 8, 2026 at 11:00 AM
+          </p>
+
+          <h2 style="color: #8B7355; font-size: 20px; margin-top: 24px;">🎉 Reception</h2>
+          <p style="font-size: 15px; line-height: 1.6;">
+            <strong>The Multipurpose Room (2nd Floor, Room 282)</strong><br/>
+            RUC, Tennessee Tech University<br/>
+            1000 N Dixie Ave, Cookeville, TN 38505
+          </p>
+
+          <hr style="border: none; border-top: 1px solid #d4c5a9; margin: 24px 0;" />
+          <p style="text-align: center; font-size: 14px; color: #888;">We can't wait to see you there! 💛</p>
+        </div>
+      `;
+
+      await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "Wedding RSVP <onboarding@resend.dev>",
+          to: [data.email],
+          subject: "🎉 RSVP Confirmed — Wedding Details Inside!",
+          html: confirmationHtml,
+        }),
+      });
+    }
+
     const resendData = await resendRes.json();
 
     if (!resendRes.ok) {
