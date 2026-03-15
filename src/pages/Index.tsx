@@ -186,7 +186,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">Reception Parking</h2>
           <div className="gold-divider w-32 mx-auto mb-10" />
           <p className="font-body text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed mb-8">
-            On weekends parking around the RUC is generally acceptable, for easier parking there are convenient lots available near the RUC at Pennebaker which is across the street from RUC or you can also park directly behind the RUC.
+            Please see the maps of the 2 parking locations. Signs indicating wedding parking will be at the entrance of both lots. On weekends, most lots are acceptable places to park on campus.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
