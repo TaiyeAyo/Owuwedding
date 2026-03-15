@@ -48,11 +48,12 @@ const Index = () => {
             <p className="font-body text-base font-semibold text-muted-foreground tracking-wide pt-1">
               Engrafted Word Church, 5 W Broad St, Cookeville, TN
             </p>
-            <p className="font-body text-sm italic text-muted-foreground max-w-md mx-auto leading-relaxed pt-6">
-              "Every good and every perfect gift is from above and comes down from the Father of lights, with whom there is no variation or shadow of turning"
-              <span className="block mt-1 not-italic font-semibold">James 1:17</span>
-            </p>
-          </div>
+            <div className="border-2 border-primary rounded-md px-6 py-4 max-w-md mx-auto mt-6">
+              <p className="font-body text-sm italic text-muted-foreground leading-relaxed">
+                "Every good and every perfect gift is from above and comes down from the Father of lights, with whom there is no variation or shadow of turning"
+                <span className="block mt-1 not-italic font-semibold">James 1:17</span>
+              </p>
+            </div>
 
           {/* Scroll hint */}
           <div className="animate-fade-in-up-delay-3 mt-[219px]">
