@@ -54,6 +54,7 @@ const Index = () => {
                 <span className="block mt-1 not-italic font-semibold">James 1:17</span>
               </p>
             </div>
+          </div>
 
           {/* Scroll hint */}
           <div className="animate-fade-in-up-delay-3 mt-[219px]">
