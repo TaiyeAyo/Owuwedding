@@ -189,7 +189,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
-              href="https://maps.app.goo.gl/kAqzrXphDYoV6ZXX6?g_st=ic"
+              href="https://www.google.com/maps/dir/Engrafted+Word+Church,+5+W+Broad+St,+Cookeville,+TN+38501/36.175458,-85.505069/@36.1695049,-85.5081165,14z/data=!4m6!4m5!1m2!1m1!1s0x886722113c86e7d7:0xfcbb34a2889d9751!1m0!3e0?g_ep=Eg1tbF8yMDI2MDExNF8wIJvbDyoASAJQAg%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border-2 border-primary text-primary px-10 py-4 rounded font-body text-xl tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
