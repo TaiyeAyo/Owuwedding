@@ -185,7 +185,7 @@ const Index = () => {
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">Reception Parking</h2>
           <div className="gold-divider w-32 mx-auto mb-10" />
           <p className="font-body text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed mb-8">
-            We have two convenient parking lots available for guests attending the reception.
+            On weekends parking around the RUC is generally acceptable, for easier parking there are convenient lots available near the RUC at Pennebaker which is across the street from RUC or you can also park directly behind the RUC.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
