@@ -49,7 +49,7 @@ const Index = () => {
               Engrafted Word Church, 5 W Broad St, Cookeville, TN
             </p>
             <p className="font-display text-lg text-primary mt-4">
-              Reception to Follow
+              Reception to Follow at
             </p>
             <p className="font-body text-base font-semibold text-muted-foreground tracking-wide pt-1">
               The Multipurpose Room, Second Floor (Room 282), RUC
