@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { QRCodeSVG } from "qrcode.react";
-import { Heart, ExternalLink, Plane } from "lucide-react";
+import { Heart, ExternalLink, Plane, MapPin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -173,6 +173,38 @@ const Index = () => {
             <Plane className="w-5 h-5" />
             Travel Details
           </Link>
+        </div>
+      </section>
+
+      {/* Parking Maps Section */}
+      <section className="py-24 px-4 bg-card">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-4">
+            Where to Park
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">Reception Parking</h2>
+          <div className="gold-divider w-32 mx-auto mb-10" />
+          <p className="font-body text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed mb-8">
+            We have two convenient parking lots available for guests attending the reception.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a
+              href="https://maps.app.goo.gl/qhNT2hLEVjpBp9Zj9?g_st=iw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 border-2 border-primary text-primary px-10 py-4 rounded font-body text-xl tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+              <MapPin className="w-5 h-5" />
+              Parking Lot 1
+            </a>
+            <a
+              href="https://maps.app.goo.gl/F3k3D6uiPyxMTjbq6?g_st=iw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 border-2 border-primary text-primary px-10 py-4 rounded font-body text-xl tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
+              <MapPin className="w-5 h-5" />
+              Parking Lot 2
+            </a>
+          </div>
         </div>
       </section>
 
