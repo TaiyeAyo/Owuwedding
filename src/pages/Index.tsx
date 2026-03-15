@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { QRCodeSVG } from "qrcode.react";
-import { Heart, ExternalLink, Plane } from "lucide-react";
+import { Heart, ExternalLink, Plane, MapPin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
