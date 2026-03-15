@@ -206,6 +206,7 @@ const Index = () => {
             </a>
           </div>
         </div>
+      </section>
 
       <footer className="py-12 px-4 bg-card text-center">
         <div className="gold-divider w-48 mx-auto mb-8" />
