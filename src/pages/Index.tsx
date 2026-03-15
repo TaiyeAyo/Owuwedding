@@ -80,6 +80,13 @@ const Index = () => {
             We would be honoured to have you share in our joy as we begin our journey together as one.
             Please let us know if you can make it.
           </p>
+
+          <div className="border-2 border-primary rounded-md px-6 py-4 max-w-md mx-auto mt-10">
+            <p className="font-body text-sm italic text-muted-foreground leading-relaxed">
+              "Every good and every perfect gift is from above and comes down from the Father of lights, with whom there is no variation or shadow of turning"
+              <span className="block mt-1 not-italic font-semibold">James 1:17</span>
+            </p>
+          </div>
         </div>
       </section>
 
