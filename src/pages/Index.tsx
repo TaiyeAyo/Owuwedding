@@ -46,7 +46,7 @@ const Index = () => {
               at 11 o'clock
             </p>
             <p className="font-body text-base font-semibold text-muted-foreground tracking-wide pt-1">
-              Engrafted Word Church, 5 W Broad St, Cookeville, TN
+              Engrafted Word Church, 5 W Broad St, Cookeville, TN 38501
             </p>
             <p className="font-display text-lg text-primary mt-4">
               Reception to Follow at
