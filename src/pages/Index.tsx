@@ -38,7 +38,7 @@ const Index = () => {
             Request the pleasure of your company
           </p>
 
-          <div className="mt-10 space-y-2 animate-fade-in-up-delay-3">
+          <div className="mt-12 space-y-2 animate-fade-in-up-delay-3">
             <p className="font-display text-lg md:text-xl text-primary">
               August 8, 2026
             </p>
