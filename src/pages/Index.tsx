@@ -189,7 +189,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
-              href="https://maps.app.goo.gl/qhNT2hLEVjpBp9Zj9?g_st=iw"
+              href="https://maps.app.goo.gl/kAqzrXphDYoV6ZXX6?g_st=ic"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border-2 border-primary text-primary px-10 py-4 rounded font-body text-xl tracking-wider hover:bg-primary hover:text-primary-foreground transition-colors">
