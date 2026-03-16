@@ -1,0 +1,1 @@
+UPDATE rsvp_counter SET total_guests = 0 WHERE id = 1;
