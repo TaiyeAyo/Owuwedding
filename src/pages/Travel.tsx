@@ -57,9 +57,7 @@ const Travel = () => {
         <div className="text-center max-w-md animate-fade-in-up">
           <Plane className="w-16 h-16 text-primary mx-auto mb-6" />
           <h1 className="text-4xl font-display mb-4 text-foreground">Thank You!</h1>
-          <p className="text-lg text-muted-foreground font-body mb-2">
-            We've noted your arrival details.
-          </p>
+          <p className="text-lg text-muted-foreground font-body mb-2">We've noted your arrival details.</p>
           <p className="text-muted-foreground font-body mb-8">
             {name} — arriving {arrivalDate} at {arrivalTime}
           </p>
@@ -79,9 +77,7 @@ const Travel = () => {
       <div className="w-full max-w-lg animate-fade-in-up">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-3">
-            Plan Your Trip
-          </p>
+          <p className="text-primary tracking-[0.3em] uppercase text-sm font-body mb-3">Plan Your Trip</p>
           <h1 className="text-5xl font-display text-foreground mb-2">Travel</h1>
           <div className="gold-divider w-32 mx-auto mt-4" />
         </div>
@@ -144,7 +140,13 @@ const Travel = () => {
             disabled={loading}
             className="w-full bg-gold-gradient text-primary-foreground font-body text-lg py-6 tracking-wider hover:opacity-90 transition-opacity"
           >
-            {loading ? <><Loader2 className="w-5 h-5 animate-spin mr-2" /> Submitting...</> : "Submit Arrival Details"}
+            {loading ? (
+              <>
+                <Loader2 className="w-5 h-5 animate-spin mr-2" /> Submitting...
+              </>
+            ) : (
+              "Submit Arrival Details"
+            )}
           </Button>
         </form>
 
@@ -156,7 +158,9 @@ const Travel = () => {
           </div>
           <div className="gold-divider w-24 mx-auto mb-6" />
           <p className="font-body text-muted-foreground leading-relaxed mb-4">
-            We've secured a special discounted rate for our guests at <span className="text-foreground font-semibold">Fairfield by Marriott Inn & Suites Cookeville</span>. We recommend booking early to guarantee availability!
+            We've secured a special discounted rate for our guests at{" "}
+            <span className="text-foreground font-semibold">Fairfield by Marriott Inn & Suites Cookeville</span>. We
+            recommend booking by July 17th to guarantee availability!
           </p>
           <a
             href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1772737277798&key=GRP&app=resvlink&_branch_match_id=1558279833976245826&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5uZG5MRCbm1taqGWnVtq6BwWo1RWlpqUCdeelxycV5ZcXpxbZOmcU5eemAgBVZ%2F%2BsYAAAAA%3D%3D"
