@@ -498,7 +498,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   style={{ padding: "5px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}
                 >
                   <QRCodeCanvas
-                    value="https://id-preview--50c83ba4-eef8-4342-bcb2-4d8746df8b60.lovable.app"
+                    value="https://www.owuwedding.com"
                     size={60}
                     fgColor={gold}
                     bgColor="white"
