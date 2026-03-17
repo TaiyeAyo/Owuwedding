@@ -4,7 +4,7 @@ import { Heart, ExternalLink, Plane, MapPin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
-  const rsvpUrl = window.location.origin + "/rsvp";
+  const rsvpUrl = "https://www.owuwedding.com/rsvp";
 
   return (
     <div className="min-h-screen bg-background">
