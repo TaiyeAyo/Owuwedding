@@ -106,7 +106,7 @@ serve(async (req) => {
           <h2 style="color: #8B7355; font-size: 20px; margin-top: 24px;">🎉 Reception</h2>
           <p style="font-size: 15px; line-height: 1.6;">
             <strong>The Multipurpose Room (2nd Floor, Room 282)</strong><br/>
-            RUC, Tennessee Tech University<br/>
+            Roaden University Center, Tennessee Tech University<br/>
             1000 N Dixie Ave, Cookeville, TN 38505
           </p>
 

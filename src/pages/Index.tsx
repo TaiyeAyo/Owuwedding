@@ -46,7 +46,7 @@ const Index = () => {
             </p>
             <p className="font-display text-lg text-primary mt-4">Reception to Follow at</p>
             <p className="font-body text-base font-semibold text-muted-foreground tracking-wide pt-1">
-              The Multipurpose Room, Second Floor (Room 282), RUC
+              The Multipurpose Room, Second Floor (Room 282), Roaden University Center
               <br />
               Tennessee Tech University, 1000 N Dixie Ave, Cookeville, TN 38505
             </p>
