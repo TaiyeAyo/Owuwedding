@@ -455,6 +455,15 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                 <br />
                 1000 N Dixie Ave, Cookeville, TN 38505
               </p>
+              <p
+                style={{
+                  fontSize: "8px",
+                  color: "#8B7D6B",
+                  lineHeight: 1.3,
+                }}
+              >
+                12:00 Noon – 3:00 PM
+              </p>
 
               {/* RSVP Note */}
               <p
