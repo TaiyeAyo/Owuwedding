@@ -449,7 +449,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginBottom: "6px",
                 }}
               >
-                Second Floor (Room 282), RUC
+                Second Floor (Room 282), Roaden University Center
                 <br />
                 Tennessee Tech University
                 <br />
