@@ -480,8 +480,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginRight: "auto",
                 }}
               >
-                We'd love to celebrate with you! Kindly RSVP for yourself and all guests in your party — including
-                little ones — so we can prepare to welcome everyone.
+                We'd love to celebrate with you! Kindly RSVP for yourself and all guests in your party.
               </p>
 
               {/* QR Code */}
