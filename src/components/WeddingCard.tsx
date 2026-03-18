@@ -323,7 +323,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   margin: "2px 0",
                 }}
               >
-                &amp;
+                to
               </p>
 
               {/* Groom Name */}
