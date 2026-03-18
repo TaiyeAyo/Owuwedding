@@ -378,7 +378,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginBottom: "6px",
                 }}
               >
-                at 11 o'clock
+                at 11 o'clock prompt
               </p>
 
               {/* Venue */}
@@ -463,7 +463,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginTop: "-4px",
                 }}
               >
-                12:00 Noon – 3:00 PM
+                12:00 – 3:00 PM
               </p>
 
               {/* RSVP Note */}
@@ -497,13 +497,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                 <div
                   style={{ padding: "5px", background: "white", borderRadius: "4px", border: `1px solid ${goldLight}` }}
                 >
-                  <QRCodeCanvas
-                    value="https://www.owuwedding.com"
-                    size={60}
-                    fgColor={gold}
-                    bgColor="white"
-                    level="M"
-                  />
+                  <QRCodeCanvas value="https://www.owuwedding.com" size={60} fgColor={gold} bgColor="white" level="M" />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
                   <p
