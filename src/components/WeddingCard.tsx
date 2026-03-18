@@ -457,11 +457,10 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               </p>
               <p
                 style={{
-                  fontSize: "10px",
-                  fontWeight: "bold",
+                  fontSize: "8px",
                   color: "#8B7D6B",
                   lineHeight: 1.3,
-                  marginTop: "-7.78px",
+                  marginTop: "-4px",
                 }}
               >
                 12:00 – 3:00 PM
@@ -481,7 +480,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginRight: "auto",
                 }}
               >
-                We'd love to celebrate with you! Kindly RSVP for yourself and all guests in your party.
+                We'd love to celebrate with you! Kindly RSVP for yourself and all guests in your party by June 8th.
               </p>
 
               {/* QR Code */}
