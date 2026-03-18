@@ -347,6 +347,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   fontSize: "10px",
                   color: textMuted,
                   lineHeight: 1.4,
+                  marginTop: "11.34px",
                   marginBottom: "6px",
                 }}
               >
