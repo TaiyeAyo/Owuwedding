@@ -374,8 +374,8 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: "11px",
-                  color: textMuted,
+                  fontSize: "12px",
+                  color: "hsl(30 12% 8%)",
                   marginBottom: "6px",
                 }}
               >
