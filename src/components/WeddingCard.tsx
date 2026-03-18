@@ -41,8 +41,8 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
   const cream = "hsl(40 33% 96%)";
   const ivory = "hsl(40 30% 93%)";
   const champagne = "hsl(36 40% 88%)";
-  const textDark = "hsl(30 10% 15%)";
-  const textMuted = "hsl(30 8% 35%)";
+  const textDark = "hsl(30 12% 8%)";
+  const textMuted = "hsl(30 10% 22%)";
   const dividerGradient = `linear-gradient(90deg, transparent, ${gold}, ${goldLight}, ${gold}, transparent)`;
 
   // Floral ornament SVG as inline data URI
