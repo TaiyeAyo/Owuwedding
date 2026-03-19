@@ -466,7 +466,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   marginTop: "-5px",
                 }}
               >
-                12:00 – 3:00 PM
+                12:00 - 3:00 pm
               </p>
 
               {/* RSVP Note */}
