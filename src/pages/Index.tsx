@@ -50,7 +50,7 @@ const Index = () => {
               <br />
               Tennessee Tech University, 1000 N Dixie Ave, Cookeville, TN 38505
             </p>
-            <p className="font-body text-sm text-muted-foreground tracking-wide pt-1">12:00 – 3:00 PM</p>
+            <p className="font-body text-base text-foreground tracking-wide pt-1">12:00 – 3:00 PM</p>
           </div>
 
           {/* Scroll hint */}
