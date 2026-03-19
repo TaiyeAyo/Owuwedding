@@ -463,7 +463,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   fontWeight: 400,
                   color: textMuted,
                   lineHeight: 1.3,
-                  marginTop: "-5px",
+                  marginTop: "-8px",
                 }}
               >
                 12:00 - 3:00 PM
