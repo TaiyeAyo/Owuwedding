@@ -581,7 +581,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                     fontSize: "11px",
                     color: textMuted,
                     fontStyle: "italic",
-                    marginTop: "-8px",
+                    marginTop: "-4px",
                   }}
                 >
                   &amp; {filteredCompanions.join(", ")}
