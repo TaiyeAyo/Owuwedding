@@ -556,7 +556,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   letterSpacing: "0.2em",
                   textTransform: "uppercase" as const,
                   color: textMuted,
-                  marginTop: "-8px",
+                  marginTop: "-4px",
                   marginBottom: "0px",
                 }}
               >
