@@ -556,7 +556,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   letterSpacing: "0.2em",
                   textTransform: "uppercase" as const,
                   color: textMuted,
-                  marginBottom: "2px",
+                  marginBottom: "0px",
                 }}
               >
                 This invitation is for
@@ -567,6 +567,7 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
                   fontSize: "16px",
                   fontWeight: 500,
                   color: textDark,
+                  marginTop: "-8px",
                   marginBottom: filteredCompanions.length > 0 ? "1px" : "0",
                 }}
               >
