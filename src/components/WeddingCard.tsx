@@ -234,29 +234,29 @@ const WeddingCard = ({ guestName, companions = [] }: WeddingCardProps) => {
             {/* Corner lines */}
             {[
               {
-                top: "10px",
-                left: "10px",
+                top: "23px",
+                left: "23px",
                 borderTop: `1.5px solid ${gold}`,
                 borderLeft: `1.5px solid ${gold}`,
                 borderRadius: "2px 0 0 0",
               },
               {
-                top: "10px",
-                right: "10px",
+                top: "23px",
+                right: "23px",
                 borderTop: `1.5px solid ${gold}`,
                 borderRight: `1.5px solid ${gold}`,
                 borderRadius: "0 2px 0 0",
               },
               {
-                bottom: "10px",
-                left: "10px",
+                bottom: "23px",
+                left: "23px",
                 borderBottom: `1.5px solid ${gold}`,
                 borderLeft: `1.5px solid ${gold}`,
                 borderRadius: "0 0 0 2px",
               },
               {
-                bottom: "10px",
-                right: "10px",
+                bottom: "23px",
+                right: "23px",
                 borderBottom: `1.5px solid ${gold}`,
                 borderRight: `1.5px solid ${gold}`,
                 borderRadius: "0 0 2px 0",
