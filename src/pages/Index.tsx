@@ -40,7 +40,7 @@ const Index = () => {
 
           <div className="mt-12 space-y-2 animate-fade-in-up-delay-3">
             <p className="font-display text-lg md:text-xl text-primary">August 8, 2026</p>
-            <p className="font-body text-base text-foreground/70 tracking-wider">at 11 o'clock prompt</p>
+            <p className="font-body text-base text-foreground tracking-wider">at 11 o'clock prompt</p>
             <p className="font-body text-base font-semibold text-muted-foreground tracking-wide pt-1">
               Engrafted Word Church, 5 W Broad St, Cookeville, TN 38501
             </p>
