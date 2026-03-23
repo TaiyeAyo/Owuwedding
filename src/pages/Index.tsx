@@ -34,7 +34,7 @@ const Index = () => {
           <div className="gold-divider w-48 mx-auto my-10 animate-fade-in-up-delay-2" />
 
           {/* Subtitle */}
-          <p className="animate-fade-in-up-delay-2 font-body text-xl md:text-2xl text-muted-foreground tracking-wide">
+          <p className="animate-fade-in-up-delay-2 font-body text-xl md:text-2xl text-foreground/70 tracking-wide">
             Request the pleasure of your company
           </p>
 
