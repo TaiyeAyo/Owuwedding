@@ -82,6 +82,22 @@ const Travel = () => {
           <div className="gold-divider w-32 mx-auto mt-4" />
         </div>
 
+        {/* Airport Info */}
+        <div className="bg-card rounded-lg p-8 border border-border shadow-sm text-center mb-8">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Plane className="w-5 h-5 text-primary" />
+            <h2 className="font-display text-2xl text-foreground">Getting Here</h2>
+          </div>
+          <div className="gold-divider w-24 mx-auto mb-6" />
+          <p className="font-body text-foreground leading-relaxed mb-2">
+            We recommend flying into{" "}
+            <span className="font-semibold">Nashville International Airport (BNA)</span>.
+          </p>
+          <p className="font-body text-muted-foreground leading-relaxed">
+            The ceremony and reception venue is about an hour's drive from the airport.
+          </p>
+        </div>
+
         {/* Arrival Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="bg-card rounded-lg p-8 border border-border shadow-sm">
