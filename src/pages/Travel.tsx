@@ -103,7 +103,7 @@ const Travel = () => {
           <div className="bg-card rounded-lg p-8 border border-border shadow-sm">
             <div className="flex items-center gap-2 mb-6">
               <Clock className="w-5 h-5 text-primary" />
-              <h2 className="font-display text-2xl text-foreground">Your Arrival</h2>
+              <h2 className="font-display text-2xl text-foreground">Your Arrival to Nashville International Airport</h2>
             </div>
 
             <div className="space-y-4">
